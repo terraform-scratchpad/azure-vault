@@ -3,7 +3,7 @@
 #
 
 provider "azurerm" {
-  version = ">=1.8.0"
+  version = "1.8.0"
 }
 
 resource "azurerm_key_vault" "tf-vault" {
