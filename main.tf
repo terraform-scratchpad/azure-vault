@@ -52,5 +52,7 @@ resource "azurerm_key_vault" "tf-vault" {
       "get"
     ]
   }
+
+  tags = "${var.tags}"
 }
 

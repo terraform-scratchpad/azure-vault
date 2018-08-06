@@ -17,3 +17,7 @@ variable "object_id" {
 variable "owner_object_id" {
   description = "an owner object id used only to list/view keys/secrets on the UI"
 }
+
+variable "tags" {
+  description = "tags"
+}
