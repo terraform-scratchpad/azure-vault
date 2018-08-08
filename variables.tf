@@ -19,5 +19,6 @@ variable "owner_object_id" {
 }
 
 variable "tags" {
+  type = "map"
   description = "tags"
 }
