@@ -3,11 +3,13 @@
 #
 
 provider "azurerm" {
-  version = "1.12.0"
+  version = "~> 1.12.0"
 }
 
-resource "azurerm_key_vault" "tf-vault" {
-  name = "tf-vault"
+
+
+resource "azurerm_key_vault" "vault" {
+  name = "${var.core-vault-name}"
   location = "${var.location}"
   tenant_id = "${var.tenant_id}"
   resource_group_name = "${var.resource_group_name}"

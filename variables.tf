@@ -22,3 +22,7 @@ variable "tags" {
   type = "map"
   description = "tags"
 }
+
+variable core-vault-name {
+  type = "string"
+}
